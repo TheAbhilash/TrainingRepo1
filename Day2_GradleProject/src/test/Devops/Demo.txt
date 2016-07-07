@@ -1,0 +1,47 @@
+Console :
+=========
+1.locate project directory
+
+2.set java path
+  set gradle path (GRADLE_HOME)
+
+
+set path=%path%;C:\Program Files\Java\jdk1.8.0_45\bin;D:\vidavid\CI_For_Java\mastering-ci\tools\gradle-2.13-bin\gradle-2.13\bin;
+
+set classpath=C:\Program Files\Java\jdk1.8.0_45\lib;
+
+set GRADLE_HOME=D:\vidavid\CI_For_Java\mastering-ci\tools\gradle-2.13-bin\gradle-2.13;
+
+
+3.command:
+--------------
+gradle -version
+gradle -q dependencies
+gradle hello
+
+
+
+
+SVN Repository
+----------------
+https://LIN73000499.corp.capgemini.com/svn/Demo_Repository/
+
+
+github account:
+--------------
+vanithab
+uboc@1234567
+
+
+https://github.com/vanithab/TrainingRepo.git
+
+
+Jenkins:
+1. Set java path
+2. Set gradle path  (install plugin)
+3. Add svn/git repository
+4. Add Repository path
+
+
+
+

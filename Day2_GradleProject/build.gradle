@@ -1,5 +1,6 @@
 apply plugin: 'java'
 apply plugin: 'maven'
+apply plugin: 'sonar-runner'
 
 group = 'ProductApp'
 version = '0.0.1-SNAPSHOT'
@@ -11,7 +12,7 @@ targetCompatibility = 1.8
 
 repositories {
         
-     maven { url "http://repo.maven.apache.org/maven2" }
+     maven { url "http://10.109.32.183:8081/nexus/content/groups/public" }
 	 //http://10.109.32.183:8081/nexus/content/groups/public
 	 
 	 //ivy{url ""}
@@ -21,8 +22,14 @@ dependencies {
 	testCompile 'junit:junit:4.12'
     compile group: 'junit', name: 'junit', version:'4.1'
     compile group: 'org.mockito', name: 'mockito-all', version:'1.9.5'
-    
-    
+    compile group: 'org.codehaus.sonar.runner', name: 'sonar-runner-dist', version : '2.3'
+}
+
+sonarRunner {
+ sonarProperties {
+   property "sonar.projectName", "Day2_GradleProject"
+   property "sonar.projectKey", "org.sonarqube:java-gradle-simple"
+ }
 }
 
 task wrapper(type: Wrapper){
