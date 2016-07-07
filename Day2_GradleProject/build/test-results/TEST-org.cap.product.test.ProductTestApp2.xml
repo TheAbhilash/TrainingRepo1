@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.cap.product.test.ProductTestApp2" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-07-05T04:55:01" hostname="DIN39000535" time="72.66">
+  <properties/>
+  <testcase name="addPrduct_check_product_null_value" classname="org.cap.product.test.ProductTestApp2" time="0.001"/>
+  <testcase name="find_product_by_id" classname="org.cap.product.test.ProductTestApp2" time="0.001"/>
+  <testcase name="testTimeOut" classname="org.cap.product.test.ProductTestApp2" time="36.106"/>
+  <testcase name="addPrduct_check_product_null_value" classname="org.cap.product.test.ProductTestApp2" time="0.001"/>
+  <system-out><![CDATA[BeforeTestCase
+addPrduct_check_product_null_value
+AfterTestCase
+setUpMethod
+BeforeTestCase
+AfterTestCase
+BeforeTestCase
+testTimeOut
+AfterTestCase
+BeforeTestCase
+addPrduct_check_product_null_value
+AfterTestCase
+tearDownMethod
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
